@@ -1,0 +1,25 @@
+{
+  "bbAppManifestVersion":"1.0",
+  "name": "Glenn Test App",
+  "unique_name": "demo",
+  "version": "0.1",
+  "description": "Glenn's test app",
+  "author": "Glenn Shoosmith",
+  "licence": "GPL",
+  "tags": "",
+  "config": true,
+  "panels": [
+    "test_panel"
+  ],
+  "objects": [
+    "task",
+    "task_list",
+    "bb.booking"
+  ],
+  "scripts": [
+    "test_script"
+  ],
+  "liquid": [
+    "test_liquid"
+  ]
+}

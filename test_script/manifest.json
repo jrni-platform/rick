@@ -1,0 +1,75 @@
+{
+  "version": "0.1",
+  "name": "glennTest",
+  "description": "Scripts for Glenn's Test app",
+  "platform": "nodejs8.10",
+  "created_at": "2018-07-19",
+  "updated_at": "2018-07-19",
+  "enabled": true,
+  "scripts":
+  [
+    {
+      "name":"TestAdminScript",
+      "description":"An example script",
+      "type":"PublicScript",
+      "actions": ["Get"],
+      "log_type": "Tail",
+      "enabled": true,
+      "handler": "public_test"
+    },
+    {
+      "name":"TestPublicScript",
+      "description":"An example script",
+      "type":"AdminScript",
+      "actions": ["Get", "Post", "Put"],
+      "log_type": "Tail",
+      "enabled": true,
+      "handler": "admin_test"
+    },
+    {
+      "name":"AfterClientCreate",
+      "description":"When a client is created",
+      "type":"Clients",
+      "actions": ["created"],
+      "log_type": "Tail",
+      "enabled": true,
+      "handler": "after_create_client_trigger"
+    },
+    {
+      "name":"AfterClientUpdate",
+      "description":"When a client is updated",
+      "type":"Clients",
+      "actions": ["updated"],
+      "log_type": "Tail",
+      "enabled": true,
+      "handler": "after_update_client_trigger"
+    },
+    {
+      "name":"AfterBookingCreate",
+      "description":"When a booking is created",
+      "type":"Bookings",
+      "actions": ["created"],
+      "log_type": "Tail",
+      "enabled": true,
+      "handler": "after_create_booking_trigger"
+    },
+    {
+      "name":"AfterBookingUpdate",
+      "description":"When a booking is updated",
+      "type":"Bookings",
+      "actions": ["updated"],
+      "log_type": "Tail",
+      "enabled": true,
+      "handler": "after_update_booking_trigger"
+    },
+    {
+      "name":"AfterBookingDelete",
+      "description":"When a booking is deleted",
+      "type":"Bookings",
+      "actions": ["cancelled"],
+      "log_type": "Tail",
+      "enabled": true,
+      "handler": "after_delete_booking_trigger"
+    }
+  ]
+}

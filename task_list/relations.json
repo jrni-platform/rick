@@ -1,0 +1,16 @@
+[
+  {
+    "left":"task_list",
+    "right":"task",
+    "type":"has_many",
+    "drops": true,
+    "hal": true
+  },
+  {
+    "left":"task_list",
+    "right":"bb.booking",
+    "type":"has_one",
+    "drops": true,
+    "hal": true
+  }
+]

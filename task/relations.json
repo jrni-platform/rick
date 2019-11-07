@@ -1,0 +1,9 @@
+[
+  {
+    "left":"task",
+    "right":"task_list",
+    "type":"has_one",
+    "drops": true,
+    "hal": true
+  }
+]

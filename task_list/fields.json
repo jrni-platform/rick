@@ -1,0 +1,23 @@
+{
+  "name": {
+    "key": "name",
+    "type": "string",
+    "default": "A list of things to do",
+    "required": true,
+    "drops": true,
+    "permissions": {
+      "admin": ["new","edit", "put","post","list","get","del"],
+      "public": ["get", "list"]
+    }
+  },
+  "deadline": {
+    "key": "deadline",
+    "type": "string",
+    "required": true,
+    "drops": true,
+    "permissions": {
+      "admin": ["new","edit", "put","post","list","get","del"],
+      "public": ["get"]
+    }
+  }
+}
