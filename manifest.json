@@ -1,25 +1,14 @@
 {
   "bbAppManifestVersion":"1.0",
-  "name": "Glenn Test App",
-  "unique_name": "demo",
+  "name": "Rick's URL Shortener",
+  "unique_name": "rick",
   "version": "0.1",
-  "description": "Glenn's test app",
+  "description": "A fun exmaple app that shortners all customer URLs in SMS's to that meme that will never give you up!",
   "author": "Glenn Shoosmith",
   "licence": "GPL",
   "tags": "",
-  "config": true,
-  "panels": [
-    "test_panel"
-  ],
-  "objects": [
-    "task",
-    "task_list",
-    "bb.booking"
-  ],
-  "scripts": [
-    "test_script"
-  ],
-  "liquid": [
-    "test_liquid"
+  "config": false,
+  "script_packs": [
+    "script"
   ]
 }

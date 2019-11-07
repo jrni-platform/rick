@@ -1,0 +1,21 @@
+{
+  "version": "0.1",
+  "name": "rick",
+  "description": "Scripts for a URL shortner",
+  "platform": "nodejs8.10",
+  "created_at": "2018-07-19",
+  "updated_at": "2018-07-19",
+  "enabled": true,
+  "scripts":
+  [
+    {
+      "name":"RickScript",
+      "description":"An script for shortening URL's",
+      "type":"Replacer",
+      "actions": ["UrlShortener"],
+      "log_type": "Tail",
+      "enabled": true,
+      "handler": "shorten"
+    }
+  ]
+}
